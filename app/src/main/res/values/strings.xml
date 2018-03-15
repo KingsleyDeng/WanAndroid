@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">WanAndroid</string>
+    <string name="logout">Logout</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Knowledge</string>
+    <string name="my_like">My farvorite</string>
+    <string name="my_about">About</string>
 </resources>

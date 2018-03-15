@@ -1,12 +1,25 @@
 package com.kingsley.wanandroid
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.kingsley.wanandroid.base.BaseActivity
 
-class MainActivity : AppCompatActivity() {
+/**
+ *  主界面
+ */
+class MainActivity : BaseActivity() {
+
+    override fun setLayoutId(): Int = R.layout.activity_main
+
+    override fun cancelRequest() {
+    }
+
+    override fun initImmersionBar() {
+        super.initImmersionBar()
+        immersionBar.titleBar(R.id.toolbar).init()
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
     }
+
 }
